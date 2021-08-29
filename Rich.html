@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB ASSESSMENT</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .box {
+      float: left;
+      width: 33.33%;
+      padding: 50px;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color: #071d8e;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+
+    .container {
+      border: 2px solid #dedede;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    .darker {
+      border-color: #ccc;
+      background-color: #ddd;
+    }
+
+    .container::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .container img {
+      float: left;
+      max-width: 60px;
+      width: 100%;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+
+    .container img.right {
+      float: right;
+      margin-left: 20px;
+      margin-right: 0;
+    }
+
+    .time-right {
+      float: right;
+      color: #aaa;
+    }
+
+    .time-left {
+      float: left;
+      color: #999;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+
+    .title {
+      color: grey;
+      font-size: 18px;
+    }
+
+    button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 22px;
+      color: black;
+    }
+
+    button:hover,
+    a:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="box">
+      <ul>
+        <li><a href="#">Groups</a></li>
+        <li><a class="active" href="#">Conversations</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Account</a></li>
+      </ul>
+    </div>
+
+
+    <div class="box">
+      <h2>Amit RG</h2>
+
+      <div class="container">
+        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+        <p>Is it in stock right now?</p>
+        <span class="time-right">02:22</span>
+      </div>
+
+      <div class="container darker">
+        <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
+        <p>We have 3 left in stock!</p>
+        <span class="time-left">02:22</span>
+      </div>
+
+      <div class="container darker">
+        <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
+        <p>If you order before 8PM we can ship it today.</p>
+        <span class="time-left">02:22</span>
+      </div>
+      <div>
+        <input type="text" name="" id="" placeholder="Message Hiten Saxena">
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="card">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
+        <h1>Amit RG</h1>
+        <p class="title">offline</p>
+        <p>Call Profile</p>
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+        <p><button>Customer details</button></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
